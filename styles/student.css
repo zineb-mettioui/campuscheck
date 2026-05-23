@@ -27,7 +27,6 @@ body{
 }
 
 /* titel */
-
 .title{
     margin-top:10px;
     margin-bottom:30px;
@@ -45,20 +44,35 @@ h2{
 }
 
 
-/* buttons */
+/* enter student id*/
 
-.button{
-    width:300px;
-    margin:20px auto;
+#studentId{
+    width:290px;
+    margin-bottom: 20px;
     padding:18px;
     background: #fff;;
-    border-radius:8px;
+    border:2px solid #FD8B2C;
+    border-radius:8px ;
     font-size:18px;
     text-align:left;
-    position:relative;
+    box-sizing:border-box;
+    
 }
 
-.student{
-    color: #D6D6D6;
+
+/* button */
+
+.continue-btn{
+    width:290px;
+    margin-bottom: 20px;
+    padding:18px;
+    background: #FD8B2C;
     border:2px solid #FD8B2C;
+    border-radius:8px;
+    color: #fff;
+    font-size:18px;
+    text-align:center;
+    cursor: pointer;
+    box-sizing:border-box;
 }
+
