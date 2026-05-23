@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    text-align:center;
+    background:black;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:hidden;
+}
+
+/* app screen */
+
+.screen{
+    width:100%;
+    max-width:400px;
+    min-height:100vh;
+    background:white;
+    margin:0 auto;
+    padding-top:40px;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+/* logo */
+
+.logo{
+    width:120px;
+    margin:20px;
+}
+
+/* titel */
+
+.title{
+    margin-top:10px;
+    margin-bottom:30px;
+    font-size:26px;
+}
+
+.green{
+    color: #447848;
+}
+
+h2{
+    padding-top: 50px;
+    font-size:20px;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+
+/* buttons */
+
+.button{
+    width:300px;
+    margin:20px auto;
+    padding:18px;
+    background: #fff;;
+    border-radius:8px;
+    font-size:18px;
+    text-align:left;
+    position:relative;
+}
+
+.student{
+    color: #D6D6D6;
+    border:2px solid #447848;
+}
