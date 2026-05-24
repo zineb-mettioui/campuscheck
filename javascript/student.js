@@ -6,10 +6,10 @@ function loginStudent() {
     alert("Please enter your student ID");
     return;
   }
-  
+
   localStorage.setItem("studentId", studentId);
 
-  alert("Student ID saved!");
+  /*alert("Student ID saved!");*/
 
   window.location.href =
   "student-dashboard.html";
