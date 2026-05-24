@@ -22,7 +22,7 @@
 
     <h3>Scan class QR</h3>
 
-    <button class="check-btn">Check-in</button>
+    <button class="check-btn" onclick="openScanner()">Check-in</button>
   </section>
 
   <section class="activity-title">
@@ -32,7 +32,7 @@
 
   <section class="activity-card">
     <div class="circle">
-      <span>5</span>
+      <span id="daysCount">5</span>
       <p>Days this<br>month</p>
     </div>
 
@@ -49,6 +49,20 @@
     <img src="images/icon_settings.png" class="nav-icon">
 
 </nav>
+<div id="scannerOverlay" class="scanner-overlay">
+  <div class="scanner-box">
+    <h2>Scan QR Code</h2>
+
+    <div class="camera-frame">
+      <div class="scan-line"></div>
+    </div>
+
+    <p>Scanning class QR...</p>
+
+    <button class="scan-btn" onclick="completeCheckIn()">Simulate scan</button>
+    <button class="cancel-btn" onclick="closeScanner()">Cancel</button>
+  </div>
+</div>
 
 </div>
 <script src="javascript/student-dashboard.js"></script>

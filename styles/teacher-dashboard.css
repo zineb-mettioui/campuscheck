@@ -190,3 +190,84 @@ body{
     width:28px;
     height:28px;
 }
+
+
+.qr-overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:400px;
+    height:100vh;
+    background:rgba(0,0,0,0.85);
+    z-index:999;
+    justify-content:center;
+    align-items:center;
+}
+
+.qr-box{
+    width:80%;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.lesson-select{
+    width:100%;
+    padding:14px;
+    border:2px solid #447848;
+    border-radius:8px;
+    font-size:15px;
+    margin-top:15px;
+}
+
+.fake-qr{
+    width:180px;
+    height:180px;
+    background:white;
+    border:8px solid #111;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:8px;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+.fake-qr div{
+    background:#111;
+}
+
+.fake-qr div:nth-child(2),
+.fake-qr div:nth-child(4),
+.fake-qr div:nth-child(8){
+    background:white;
+}
+
+.lesson-code{
+    font-weight:bold;
+    color:#447848;
+}
+
+.scan-btn,
+.close-btn{
+    width:100%;
+    padding:14px;
+    background:#447848;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.cancel-btn{
+    width:100%;
+    padding:14px;
+    background:#D9D9D9;
+    border:none;
+    border-radius:8px;
+    margin-top:10px;
+}

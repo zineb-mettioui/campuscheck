@@ -22,7 +22,8 @@
 
     <h3>Generate a QR code for your class <br> so students can check-in.</h3>
 
-    <button class="check-btn">Generate QR</button>
+    <button class="check-btn" onclick="openClassPopup()">
+  Generate QR</button>
   </section>
 
   <section class="activity-title">
@@ -70,7 +71,64 @@
     <img src="images/icon_settings.png" class="nav-icon">
 
 </nav>
+<div id="classOverlay" class="qr-overlay">
 
+  <div class="qr-box">
+
+    <h2>Select Class</h2>
+
+    <select id="lessonSelect" class="lesson-select">
+
+      <option value="Interactive Web / 1 XD">
+        Interactive Web / 1 XD
+      </option>
+
+      <option value="Backend-end / 2 XD">
+        Backend-end /  2 XD
+      </option>
+
+      <option value="Lab 4 / 2 XD">
+        Lab 4 /  2 XD
+      </option>
+
+    </select>
+
+    <button class="scan-btn" onclick="generateQR()">
+      Create QR
+    </button>
+
+    <button class="cancel-btn" onclick="closeClassPopup()">
+      Cancel
+    </button>
+
+  </div>
+
+</div>
+<div id="qrOverlay" class="qr-overlay">
+
+  <div class="qr-box">
+
+    <h2>Class QR Code</h2>
+
+    <p id="selectedLesson"></p>
+
+    <div class="fake-qr">
+
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+
+    </div>
+
+    <p class="lesson-code" id="lessonCode"></p>
+
+    <button class="close-btn" onclick="closeQR()">
+      Close
+    </button>
+
+  </div>
+
+</div>
 </div>
 <script src="javascript/teacher-dashboard.js"></script>
 </body>

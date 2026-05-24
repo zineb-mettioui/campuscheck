@@ -195,3 +195,73 @@ body{
     width:28px;
     height:28px;
 }
+
+
+/* scan QR */
+
+.scanner-overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:400px;
+    height:100vh;
+    background:rgba(0,0,0,0.85);
+    z-index:999;
+    justify-content:center;
+    align-items:center;
+}
+
+.scanner-box{
+    width:80%;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.camera-frame{
+    width:220px;
+    height:220px;
+    border:3px solid #FD8B2C;
+    margin:20px auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    background:#111;
+}
+
+.scan-line{
+    width:100%;
+    height:4px;
+    background:#447848;
+    position:absolute;
+    animation:scan 2s infinite;
+}
+
+@keyframes scan{
+    0%{ top:20px; }
+    50%{ top:190px; }
+    100%{ top:20px; }
+}
+
+.scan-btn{
+    width:100%;
+    padding:14px;
+    background:#447848;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.cancel-btn{
+    width:100%;
+    padding:14px;
+    background:#D9D9D9;
+    border:none;
+    border-radius:8px;
+    margin-top:10px;
+}
